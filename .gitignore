@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# Fully compiled application. No need to store it in the repo
+/public/bundle.js
