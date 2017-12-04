@@ -6,7 +6,7 @@ import {
     loadDataFailure
 } from './action-creators';
 
-function LoadDataById(entryId) {
+function loadDataById(entryId) {
     return dispatch => {
         dispatch(loadDataRequest(entryId));
         axios.get("/").then(response => {
@@ -18,5 +18,5 @@ function LoadDataById(entryId) {
 }
 
 export default {
-    LoadDataById
+    loadDataById
 }

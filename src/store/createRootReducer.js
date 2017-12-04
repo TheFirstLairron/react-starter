@@ -4,8 +4,8 @@ import allModules from '../modules';
 
 function createReducerMap() {
     let reducerMap = {};
-    for (let mod of allModules) {
-        reducerMap[mod.NAME] = mod.reducer;
+    for (let mod in allModules) {
+        reducerMap[allModules[mod].NAME] = allModules[mod].reducer;
     }
 
     return reducerMap;
